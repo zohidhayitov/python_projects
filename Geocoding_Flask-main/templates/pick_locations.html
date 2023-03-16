@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %} Pick Locations {% endblock %}
+
+{% block main %}
+
+{% for i in range(nr_of_points) %}
+<form method="POST" action=''>
+  <div class = "form-group">
+    <h2>Give a name to your location.</h2>
+    <input type="text" name = "loc_name" placeholder="Give a name, any name">
+    <h2>Enter a valid address for your location, city name can suffice.</h2>
+    <input type="text" name = "address" placeholder="Please type a valid address">
+  </div>
+  {% endfor %}
+  <input class="btn btn-primary" type="submit" value="submit">
+</form>
+
+{% endblock %}

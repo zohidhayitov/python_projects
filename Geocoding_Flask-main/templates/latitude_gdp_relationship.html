@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %} Latitude and GDP per capita {% endblock %}
+
+{% block main %}
+
+
+<h1>Scatter Plot of Latitude & GDP per capita</h1>
+<p>Correlation coefficient: {{ correlation }}</p>
+<p>p_value: {{ p_value }}</p>
+
+
+<img src="{{ url_for('static', filename='latitude_gdp_relationship.jpg') }}" 
+alt="Latitude and GDP per capita Regression Plot">
+
+{% endblock %}

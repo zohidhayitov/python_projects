@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %} Choose Number of Points {% endblock %}
+
+{% block main %}
+
+<h1>How many points would you like to display on the map?</h1>
+<form method="POST" action=''>
+  <div class = "form-group">
+    <input type="text" name = "nr_of_points" placeholder="enter a number">
+  </div>
+  <input class="btn btn-primary" type="submit" value="submit">
+</form>
+
+{% endblock %}
